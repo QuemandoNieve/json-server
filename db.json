@@ -1,9 +1,53 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+    "usuarios":[
+        {
+      "id":1,
+      "usuario": "ivan.rivas",
+      "contrasena": "ivan1234",
+      "correo": "ivan.rivas@gmail.com",
+      "profesor": false
+    },
+        {
+            "id":2,
+      "usuario": "diego.lopez",
+      "contrasena": "diego1234",
+      "correo": "diego.lopez@gmail.com",
+      "profesor": false
+    },
+        {
+            "id":3,
+      "usuario": "martin.aravena",
+      "contrasena": "martin1234",
+      "correo": "martin.aravena@gmail.com",
+      "profesor": false
+    },
+        {
+            "id":4,
+      "usuario": "julio.herrera",
+      "contrasena": "julio1234",
+      "correo": "julio.herrera@gmail.com",
+      "profesor": true
+    }
+    ],
+    "asignaturas":[
+        {
+            "id": 1,
+            "nombre": "aplicaciones moviles",
+            "idProfesor": 4,
+            "estudiante":[1,2,3]
+        },
+        {
+            "id": 2,
+            "nombre": "calidad de software",
+            "idProfesor": 4,
+            "estudiante":[1,2,3]
+        },
+        {
+            "id": 3,
+            "nombre": "arquitectura",
+            "idProfesor": 4,
+            "estudiante":[1,2,3]
+        }
+    ],
+    "asistencias":[]
 }
